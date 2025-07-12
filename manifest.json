@@ -1,9 +1,10 @@
 {
     "version": 0,
-    "tools": {
-        "hello-world": {
-            "label": "Hello World",
-            "path": "hello.html"
+    "dashboard": {
+        "cockpit-views": {
+            "label": "Cockpit Views",
+            "path": "dashboard.html",
+            "order": 5
         }
-    }
+    },
 }

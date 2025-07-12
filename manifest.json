@@ -1,0 +1,9 @@
+{
+    "version": 0,
+    "tools": {
+        "hello-world": {
+            "label": "Hello World",
+            "path": "hello.html"
+        }
+    }
+}

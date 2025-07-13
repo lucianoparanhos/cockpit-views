@@ -3,18 +3,43 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Cockpit Views Dashboard</title>
+    <title>Views Dashboard</title>
     <script src="../base1/cockpit.js"></script>
 </head>
 
-<body>
-    <main tabindex="-1">
-        <section>
-            <h1>Dashboard Cockpit Views</h1>
-            <p>Bem-vindo ao seu novo dashboard!</p>
-            <!-- Aqui você pode inserir widgets, gráficos, etc. -->
+<body class="pf-c-page">
+    <!-- Header com título do Dashboard -->
+    <header class="pf-c-page__header">
+        <div class="pf-c-page__header-brand">
+            <h1 class="pf-c-title pf-m-2xl">Views</h1>
+        </div>
+    </header>
+
+    <!-- Área principal do conteúdo -->
+    <div class="pf-c-page__main">
+        <section class="pf-c-page__main-section pf-m-light">
+            <!-- Cartão de Boas-vindas -->
+            <div class="pf-c-card pf-m-hoverable">
+                <div class="pf-c-card__header">
+                    <h2 class="pf-c-title pf-m-lg">Bem-vindo ao Dashboard</h2>
+                </div>
+                <div class="pf-c-card__body">
+                    <p>Este é o seu painel inicial. Insira widgets e gráficos aqui.</p>
+                </div>
+            </div>
+
+            <!-- Exemplo de widget de uso de disco -->
+            <div class="pf-c-card pf-m-hoverable pf-m-align-left" style="margin-top:1rem;">
+                <div class="pf-c-card__header">
+                    <h2 class="pf-c-title pf-m-lg">Uso de Disco</h2>
+                </div>
+                <div class="pf-c-card__body">
+                    <pre id="disk-output">Carregando uso de disco...</pre>
+                </div>
+            </div>
         </section>
-    </main>
+    </div>
+
     <script src="dashboard.js"></script>
 </body>
 

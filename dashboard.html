@@ -1,46 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html id="system-views-page" lang="en-us" dir="ltr">
 
 <head>
     <meta charset="utf-8">
     <title>Views Dashboard</title>
+    <!-- Cockpit e PatternFly carregam base1 scripts automaticamente -->
     <script src="../base1/cockpit.js"></script>
+    <script src="../base1/po.js"></script>
+    <script src="dashboard.js"></script>
+    <script src="../manifests.js"></script>
 </head>
 
-<body class="pf-c-page">
-    <!-- Header com título do Dashboard -->
-    <header class="pf-c-page__header">
-        <div class="pf-c-page__header-brand">
-            <h1 class="pf-c-title pf-m-2xl">Views</h1>
+<body class="pf-v6-m-tabular-nums">
+    <div class="pf-v6-c-page no-masthead-sidebar">
+        <div class="pf-v6-c-page__main-container">
+            <main class="pf-v6-c-page__main" tabindex="-1">
+                <section class="pf-v6-c-page__main-section pf-m-padding">
+                    <!-- Cabeçalho do Dashboard -->
+                    <div class="pf-v6-l-flex pf-m-space-items-lg pf-m-align-items-center pf-m-nowrap"
+                        style="margin-bottom:1rem;">
+                        <h1 class="pf-c-title pf-m-2xl">Views Dashboard</h1>
+                        <p>Seu painel de visualizações personalizadas.</p>
+                    </div>
+                    <!-- Galeria de widgets -->
+                    <div class="pf-v6-l-gallery pf-m-gutter">
+                        <!-- Widget: Uso de Disco -->
+                        <div class="pf-v6-c-card pf-m-hoverable">
+                            <div class="pf-v6-c-card__title">
+                                <h2 class="pf-c-title pf-m-lg">Uso de Disco</h2>
+                            </div>
+                            <div class="pf-v6-c-card__body">
+                                <pre id="disk-output">Carregando uso de disco...</pre>
+                            </div>
+                        </div>
+                        <!-- Outros widgets podem ser adicionados aqui -->
+                    </div>
+                </section>
+            </main>
         </div>
-    </header>
-
-    <!-- Área principal do conteúdo -->
-    <div class="pf-c-page__main">
-        <section class="pf-c-page__main-section pf-m-light">
-            <!-- Cartão de Boas-vindas -->
-            <div class="pf-c-card pf-m-hoverable">
-                <div class="pf-c-card__header">
-                    <h2 class="pf-c-title pf-m-lg">Bem-vindo ao Dashboard</h2>
-                </div>
-                <div class="pf-c-card__body">
-                    <p>Este é o seu painel inicial. Insira widgets e gráficos aqui.</p>
-                </div>
-            </div>
-
-            <!-- Exemplo de widget de uso de disco -->
-            <div class="pf-c-card pf-m-hoverable pf-m-align-left" style="margin-top:1rem;">
-                <div class="pf-c-card__header">
-                    <h2 class="pf-c-title pf-m-lg">Uso de Disco</h2>
-                </div>
-                <div class="pf-c-card__body">
-                    <pre id="disk-output">Carregando uso de disco...</pre>
-                </div>
-            </div>
-        </section>
     </div>
-
-    <script src="dashboard.js"></script>
 </body>
 
 </html>

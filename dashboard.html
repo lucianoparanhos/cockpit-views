@@ -3,43 +3,60 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Views Dashboard</title>
+    <title>Views</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="stylesheet" href="dashboard.css">
-    <!-- Cockpit e PatternFly carregam base1 scripts automaticamente -->
-    <script src="../base1/cockpit.js"></script>
-    <script src="../base1/po.js"></script>
+
+    <script type="text/javascript" src="../base1/cockpit.js"></script>
+    <script type="text/javascript" src="../base1/po.js"></script>
+
     <script src="dashboard.js"></script>
+
     <script src="../manifests.js"></script>
 </head>
 
 <body class="pf-v6-m-tabular-nums">
-    <div class="pf-v6-c-page no-masthead-sidebar">
-        <div class="pf-v6-c-page__main-container">
-            <main class="pf-v6-c-page__main" tabindex="-1">
-                <section class="pf-v6-c-page__main-section pf-m-padding">
-                    <!-- Cabeçalho do Dashboard -->
-                    <div class="pf-v6-l-flex pf-m-space-items-lg pf-m-align-items-center pf-m-nowrap"
-                        style="margin-bottom:1rem;">
-                        <h1 class="pf-c-title pf-m-2xl">Views Dashboard</h1>
-                        <p>Seu painel de visualizações personalizadas.</p>
-                    </div>
-                    <!-- Galeria de widgets -->
-                    <div class="pf-v6-l-gallery pf-m-gutter">
-                        <!-- Widget: Uso de Disco -->
-                        <div class="pf-v6-c-card pf-m-hoverable">
-                            <div class="pf-v6-c-card__title">
-                                <h2 class="pf-c-title pf-m-lg">Uso de Disco</h2>
-                            </div>
-                            <div class="pf-v6-c-card__body">
-                                <pre id="disk-output">Carregando uso de disco...</pre>
-                            </div>
+
+    <div class="ct-page-fill" id="views">
+        <div class="pf-v6-c-page no-masthead-sidebar">
+            <div class="pf-v6-c-page__main-container">
+                <main class="pf-v6-c-page__main">
+                    <section class="pf-v6-c-page__main-section pf-m-padding ct-overview-header" hidden>
+                        <div class="ct-overview-header-hostname">
+                            <h1>TS150 (ts150)</h1>
+                            <div class="ct-overview-header-subheading" id="system_information_os_text">running Debian
+                                GNU/Linux 13
+                                (trixie)</div>
                         </div>
-                        <!-- Outros widgets podem ser adicionados aqui -->
-                    </div>
-                </section>
-            </main>
+                        <div class="ct-overview-header-actions">
+                            <div class="pf-v6-c-menu-toggle pf-m-secondary pf-m-split-button"><button id="reboot-button"
+                                    class="pf-v6-c-menu-toggle__button" type="button">Reboot</button><button
+                                    class="pf-v6-c-menu-toggle__button" type="button" aria-expanded="false"
+                                    id="shutdown-group" data-ouia-component-type="PF6/MenuToggle" data-ouia-safe="true"
+                                    data-ouia-component-id="OUIA-Generated-MenuToggle-secondary-2"><span
+                                        class="pf-v6-c-menu-toggle__controls"><span
+                                            class="pf-v6-c-menu-toggle__toggle-icon"><svg class="pf-v6-svg"
+                                                viewBox="0 0 320 512" fill="currentColor" aria-hidden="true" role="img"
+                                                width="1em" height="1em">
+                                                <path
+                                                    d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z">
+                                                </path>
+                                            </svg></span></span></button></div>
+                        </div>
+                    </section>
+
+                    <section class="pf-v6-c-page__main-section">
+
+                    </section>
+                </main>
+            </div>
         </div>
     </div>
+
+
+
 </body>
 
 </html>

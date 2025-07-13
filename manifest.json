@@ -4,7 +4,7 @@
         "cockpit-views": {
             "label": "Views",
             "path": "dashboard.html",
-            "order": 65
+            "order": 9999
         }
     }
 }

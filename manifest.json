@@ -2,7 +2,7 @@
     "version": 0,
     "menu": {
         "cockpit-views": {
-            "label": "Cockpit Views",
+            "label": "Views",
             "path": "dashboard.html",
             "order": 65
         }
